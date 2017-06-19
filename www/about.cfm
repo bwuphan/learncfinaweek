@@ -113,13 +113,14 @@
 						<!-- Personal Information Output -->
 						<div class="right">
 							<h2>Personal Info</h2>
-							<div class="clr"><div class="input-box">Name <cfoutput></div><span>#personalInfo.name#</span> </div></cfoutput>
-							<div class="clr"><div class="input-box">Date of birth </div><span> [DOB]</span></div>
-							<div class="clr"><div class="input-box">Address</div><span> [address]</span></div>
-							<div class="clr"><div class="input-box">Phone</div> <span>[phonenumber]</span>  </div>
-							<div class="clr"><div class="input-box">E-mail</div><span><a href="#">[email]</a></span>  </div>
-							<div class="clr"><div class="input-box">Website </div> <span><a href="#">[website]</a></span> </div>
-							<div class="clr"><div class="box1">Skype </div> <span><a href="#">[skype]</a></span> </div>
+							<cfoutput><div class="clr"><div class="input-box">Name </div><span>#personalInfo.name#</span> </div>
+							<div class="clr"><div class="input-box">Date of birth </div><span> #personalInfo.DOB#</span></div>
+							<div class="clr"><div class="input-box">Address</div><span> #personalInfo.Address#</span></div>
+							<div class="clr"><div class="input-box">Phone</div> <span>#personalInfo.phonenumber#</span>  </div>
+							<div class="clr"><div class="input-box">E-mail</div><span><a href=#personalInfo.email#>#personalInfo.email#</a></span>  </div>
+							<div class="clr"><div class="input-box">Website </div> <span><a href=#personalInfo.website#>#personalInfo.website#</a></span> </div>
+							<div class="clr"><div class="box1">Skype </div> <span><a href=#personalInfo.skype#>#personalInfo.skype#</a></span> </div>
+							</cfoutput>
 						</div>
 					</div>
 					<div class="clr"></div>
