@@ -1,6 +1,3 @@
-<cfscript>
-	personalInfo = {name='bobby', dob='6/16/89', address='something', phonenumber='9162201501', email='something@gmail.com', website='bwuphan@github.io', skype='bobby'};
-</cfscript>
 <cfset myName="Bobby"/>
 <cfset myPosition="Developer"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -1,3 +1,6 @@
+<cfscript>
+	personalInfo = {name='bobby', dob='1/1/01', address='something', phonenumber='(555) 555-5555', email='something@gmail.com', website='bwuphan@github.io', skype='bobbyskype'};
+</cfscript>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -7,26 +10,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta http-equiv="X-UA-Compatible" content="IE=7" />
 	<title>This is my WebSite</title>
-	
+
 	<!-- Loading Google Web fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
-	
+
 	<!-- CSS Files -->
 	<link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css"  id="color" />
 	<link href="assets/css/typography.css" rel="stylesheet" type="text/css"  id="customFont"/>
 	<link href="assets/css/arial_content.css" rel="stylesheet" type="text/css"  id="contentfont"/>
-	
+
 	<!-- include jQuery library -->
 	<script type="text/javascript" src="assets/js/jquery-1.7.min.js"></script>
 
 	<script src="assets/js/raphael.js" type="text/javascript"></script>
 	<script src="assets/js/init.js" type="text/javascript"></script>
 </head>
-	
+
 <body>
 
 	<!-- wrapper -->
@@ -39,20 +42,20 @@
 				<div class="logo">
 					<img src="assets/images/logo.png" alt="Logo" width="202" height="52" border="0"  id="logo" />
 				</div>
-				
+
 				<!--head right -->
 				<div class="right">
-				
+
 					<!--// Navigation //-->
 					<div class="menu_nav">
 						<div id="nav-wrap">
 							<ul class="arrowunderline" id="nav">
-								<li class="home"><a href="index.html">Home</a></li>
+								<li class="home"><a href="index.cfm">Home</a></li>
 								<li class="about" id="selected"><a href="about.html">About</a></li>
 								<li class="resume"><a href="resume.html">Resume</a></li>
 								<li class="blog"><a href="blog.html">Blog</a></li>
 								<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-								<li class="contact"><a href="contact.html">Contact</a></li>	
+								<li class="contact"><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -63,9 +66,9 @@
 			<!--// logo bg end //-->
 		</div>
 		<!--header end -->
-	
+
 		<!-- Content Start -->
-  	
+
 		<!--Card  -->
 		<div id="content">
 			<div class="card-pattern">
@@ -75,7 +78,7 @@
 						<div class="top-bg1">
 							<div class="top-left">
 								<div><h1>About me</h1></div>
-							</div> 
+							</div>
 						</div>
 						<div class="clr">
 							<div class="pat-bottomleft">&nbsp;</div>
@@ -93,13 +96,13 @@
 							<div id="SliderBackground">
 								<div id="Slider" align="center" >
 									<img src="assets/images/headshot/headshot.jpg" alt="photo" />
-								</div><!-- #Slider -->   
+								</div><!-- #Slider -->
 							</div><!-- #SliderBackground -->
 						</div>
 						<div class="content">
 							<h2>A brief info about me</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc ante, feugiat molestie fringilla id, faucibus ut sem. Aenean vitae purus vel nibh porttitor adipiscing. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum congue lectus eu magna porta consectetur. Duis in adipiscing nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac. 
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc ante, feugiat molestie fringilla id, faucibus ut sem. Aenean vitae purus vel nibh porttitor adipiscing. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum congue lectus eu magna porta consectetur. Duis in adipiscing nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.
 							</p>
 							<h2>Stay Connected</h2>
 							<ul class="no-list social-list">
@@ -110,13 +113,13 @@
 						<!-- Personal Information Output -->
 						<div class="right">
 							<h2>Personal Info</h2>
-							<div class="clr"><div class="input-box">Name </div><span>[name]</span> </div>
+							<div class="clr"><div class="input-box">Name <cfoutput></div><span>#personalInfo.name#</span> </div></cfoutput>
 							<div class="clr"><div class="input-box">Date of birth </div><span> [DOB]</span></div>
 							<div class="clr"><div class="input-box">Address</div><span> [address]</span></div>
 							<div class="clr"><div class="input-box">Phone</div> <span>[phonenumber]</span>  </div>
 							<div class="clr"><div class="input-box">E-mail</div><span><a href="#">[email]</a></span>  </div>
-							<div class="clr"><div class="input-box">Website </div> <span><a href="#">[website]</a></span> </div> 
-							<div class="clr"><div class="box1">Skype </div> <span><a href="#">[skype]</a></span> </div> 
+							<div class="clr"><div class="input-box">Website </div> <span><a href="#">[website]</a></span> </div>
+							<div class="clr"><div class="box1">Skype </div> <span><a href="#">[skype]</a></span> </div>
 						</div>
 					</div>
 					<div class="clr"></div>
@@ -125,8 +128,8 @@
 				<div class="clr"></div>
 			</div><!--card pattern end -->
 			<div class="clr "></div>
-		</div>		  <!--content end -->	
+		</div>		  <!--content end -->
 		<div class="bottom-shade"></div>
-	</div>  <!--Container / wrapper end -->	
+	</div>  <!--Container / wrapper end -->
 </body>
 </html>
