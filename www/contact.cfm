@@ -7,26 +7,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
 	<meta http-equiv="X-UA-Compatible" content="IE=7" />
 	<title>This is my WebSite</title>
-	
+
 	<!-- Loading Google Web fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
-	
+
 	<!-- CSS Files -->
 	<link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css"  id="color" />
 	<link href="assets/css/typography.css" rel="stylesheet" type="text/css"  id="customFont"/>
 	<link href="assets/css/arial_content.css" rel="stylesheet" type="text/css"  id="contentfont"/>
-	
+
 	<!-- include jQuery library -->
 	<script type="text/javascript" src="assets/js/jquery-1.7.min.js"></script>
 
 	<script src="assets/js/raphael.js" type="text/javascript"></script>
 	<script src="assets/js/init.js" type="text/javascript"></script>
 </head>
-	
+
 <body>
 
 	<!-- wrapper -->
@@ -39,10 +39,10 @@
 				<div class="logo">
 					<img src="assets/images/logo.png" alt="Logo" width="202" height="52" border="0"  id="logo" />
 				</div>
-				
+
 				<!--head right -->
 				<div class="right">
-				
+
 					<!--// Navigation //-->
 					<div class="menu_nav">
 						<div id="nav-wrap">
@@ -52,7 +52,7 @@
 								<li class="resume"><a href="resume.html">Resume</a></li>
 								<li class="blog"><a href="blog.html">Blog</a></li>
 								<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-								<li class="contact" id="selected"><a href="contact.html">Contact</a></li>	
+								<li class="contact" id="selected"><a href="contact.html">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -63,9 +63,9 @@
 			<!--// logo bg end //-->
 		</div>
 		<!--header end -->
-		
+
 		<!-- Content Start -->
-  	
+
 		<!--Card  -->
 		<div id="content">
 			<div class="card-pattern">
@@ -75,7 +75,7 @@
 						<div class="top-bg1">
 							<div class="top-left">
 								<div><h1>Contact</h1></div>
-							</div> 
+							</div>
 						</div>
 						<div class="clr">
 							<div class="pat-bottomleft">&nbsp;</div>
@@ -94,11 +94,14 @@
 							<div class="clr">
 								<div id="respond">
 									<h2>Drop me a line</h2>
-									<p>Your email address will not be published. Required fields are marked *</p>		
-									<!-- Message Output -->								
+									<p>Your email address will not be published. Required fields are marked *</p>
+									<!-- Message Output -->
+									<cfif form.submitted>
+										<p>Your form has been submitted</p>
+									</cfif>
 									<div id="post_message" class="post_message"></div>
-									
-									<div class="boxBody">			  
+
+									<div class="boxBody">
 										<div class="desc">
 
 											<form id="form" action="#" method="post">
@@ -107,20 +110,20 @@
 													<input name="contactname" type="text" class="required" />
 												</div>
 												<div>
-													<label>E-mail <span class="font-11">(required)</span></label>				
-													<input name="email" type="text" class="required email" />		
+													<label>E-mail <span class="font-11">(required)</span></label>
+													<input name="email" type="text" class="required email" />
 												</div>
 												<div class="textarea">
-													<label>Message <span class="font-11">(required)</span></label>				
-													<textarea name="message" rows="6" cols="60" class="required"></textarea>		
+													<label>Message <span class="font-11">(required)</span></label>
+													<textarea name="message" rows="6" cols="60" class="required"></textarea>
 												</div>
 												<div>
 													<input id="submitBtn" value="Submit"  name="submit" type="submit" class="submitBtn" />
 												</div>
-											</form>	
-										</div><!--END desc show--> 
-									<!--END desc-->	
-									</div>					
+											</form>
+										</div><!--END desc show-->
+									<!--END desc-->
+									</div>
 									<div  class="clr"></div>
 								</div>
 							</div>
@@ -136,12 +139,12 @@
 								<div class="clr"> &nbsp;</div>
 								<div class="clr"><div class="input-box1">Phone</div><span>[phonenumber]</span></div>
 								<div class="clr"><div class="input-box1">E-mail</div><span><a href="#">[email]</a></span>  </div>
-								<div class="clr"><div class="input-box1">Skype </div> <span><a href="#">[skype]</a></span> </div> 
+								<div class="clr"><div class="input-box1">Skype </div> <span><a href="#">[skype]</a></span> </div>
 							</div>
 							<div class="clr">
 								<div class="pad-top5"></div>
 								<h2>Latest Tweet</h2>
-								<div class="twitter clr"> 
+								<div class="twitter clr">
 									<!-- Twitter Output -->
 									<ul>
 										<li>
@@ -153,12 +156,12 @@
 					</div><!--//clr end //-->
 					<div class="clr"></div>
 				</div><!-- contact end -->
-		
+
 				<div class="clr"></div>
 			</div><!--card pattern end -->
 			<div class="clr "></div>
-		</div>		  <!--content end -->	
+		</div>		  <!--content end -->
 		<div class="bottom-shade"></div>
-	</div>  <!--Container / wrapper end -->	
+	</div>  <!--Container / wrapper end -->
 </body>
 </html>
