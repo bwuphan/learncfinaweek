@@ -1,3 +1,4 @@
+<cfparam name="form.submitted" default="0" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -104,7 +105,7 @@
 									<div class="boxBody">
 										<div class="desc">
 
-											<form id="form" action="#" method="post">
+											<form id="form" action="contact.cfm" method="post">
 												<div>
 													<label>Name <span class="font-11">(required)</span></label>
 													<input name="contactname" type="text" class="required" />
@@ -120,6 +121,7 @@
 												<div>
 													<input id="submitBtn" value="Submit"  name="submit" type="submit" class="submitBtn" />
 												</div>
+												<input type="hidden" name="submitted" value="1" />
 											</form>
 										</div><!--END desc show-->
 									<!--END desc-->
