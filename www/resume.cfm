@@ -103,7 +103,12 @@
 								<h2>#myResume.type#<span>&nbsp;</span></h2>
 									<cfoutput>
 										<!-- Start Resume Listing -->
-										<h5>#myResume.title#<span>#myResume.startDate# to #myResume.endDate#</span> </h5>
+										<h5>#myResume.title#<span>#dateFormat(myResume.startDate,'mm/dd/yyyy')# to
+											<cfif len(myResume.endDate)>
+												#dateFormat(myResume.endDate, 'mm/dd/yyyy')#
+												<cfelse>Present
+											</cfif>
+											</span> </h5>
 										<p>#myResume.details#</p>
 										<!-- End Resume Listing -->
 									</cfoutput>
